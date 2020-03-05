@@ -1,0 +1,232 @@
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top:30px;
+	min-height: 130px;
+    border-bottom: #e8491d 3px solid;
+    display: block;
+}
+
+header #welcome {
+    float: left;
+}
+
+header .float {
+    float: right;
+}
+
+header #welcome h1{
+	margin:0;
+}
+header #welcome h5{
+	color: coral
+}
+
+header nav{
+    margin-top:10px;
+    display: inline-block;
+}
+
+
+header li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+
+#cuhk {
+    width: 120px;
+    height: 94.7px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header a{
+	color:#ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color:#ccc;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+header nav li .current{
+    color:#e8491d;
+    font-weight:bold;
+    cursor: default;
+}
+
+body {
+    background-image: url("./images/background.jpeg") ;
+    background-size: cover;
+}
+
+.avatar {
+    position: relative;
+    margin:10px;
+    width: 60%;
+    border-radius: 50%;
+}
+
+body input {
+    width:100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+body #block {
+    position: relative;
+    background-color: #f4f4f4;
+    float:left;
+	text-align: center;
+	width:33.3%;
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 14px 0;
+    opacity: 0.85;
+}
+
+body #box {
+    position: relative;
+    background-color: #f4f4f4;
+    float:left;
+	text-align: center;
+    width:33.3%;
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 10px 0;
+    opacity: 0.85;
+}
+
+
+
+button {
+    background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+#showcase {
+    float:right;
+    width: 60%;
+    margin-top: 80px;
+    padding: 5%;
+}
+
+
+/*The Modal (background)*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    }
+
+/*Modal Content/Box*/
+.modal-content {
+    background-color: #fefefe;
+    color: #000;  /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 300px;/* Could be more or less, depending on screen size */
+    display: block;
+    text-align: center;
+    margin: 2% auto 5% auto;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    }
+
+.close:hover, .close:focus{
+    color: red;
+    cursor: pointer;
+}
+
+#Reset-Box{
+    position: relative;
+    background-color: #f4f4f4;
+    float:left;
+	text-align: center;
+    width:33.3%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 100px 2%;
+    margin: 44px 0;
+    opacity: 0.85;
+}
+
+
+
+@media(max-width: 1200px){
+    body{
+        background-size: auto; 
+        background-position: center center;
+    }
+}
+
+@media(max-width: 768px){
+    header .float, header #welcome {
+        float: none;
+        text-align: center;
+        width:100%;
+    }
+    
+    #cuhk {
+        display: none;
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        color: #000;  /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 300px;/* Could be more or less, depending on screen size */
+        display: block;
+        text-align: center;
+        margin: 2% auto 5% auto;
+    }
+
+    #Reset-Box{
+        position: relative;
+        background-color: #f4f4f4;
+        float:left;
+        text-align: center;
+        width:33.3%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 90px 2%;
+        margin: 14px 0;
+        opacity: 0.85;
+    }
+
+    
+}
